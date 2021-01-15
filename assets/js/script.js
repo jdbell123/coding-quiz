@@ -265,7 +265,6 @@ if (answerArea) {
         lineBreak.innerHTML = "<br><hr>";
         var resultEl = document.createElement("div");
 
-        console.dir(event.target.id);
         if (event.target.textContent === question[questionNum].ca) {
             resultEl.textContent = "Correct!";
         } else {
