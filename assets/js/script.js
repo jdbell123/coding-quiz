@@ -11,7 +11,7 @@
     // Questions and answers for quiz
     var question = [{
         q: "Inside which HTML element do we put the JavaScript?",
-        a: ["<js>", "<script>", "<javascript>", "<scripting"],
+        a: ["<js>", "<script>", "<javascript>", "<scripting>"],
         ca: "<script>"
     },
     {
