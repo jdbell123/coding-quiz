@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Linked CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Linked JavaScript -->
+    <script src="assets/js/script.js" defer></script>
+
+    <!-- Bootstrap Bundle JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"
+        defer></script>
+
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-md mb-4">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#" id="hsp">View Highscores</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a id="timerData" class="nav-link" href="" data-target="#myModal" data-toggle="modal">Time Remaining:
+                    <span id="timeRemaining">0</span> </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Bootstrap grid -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+
+
+                <div id="welcome">
+                    <h1>Welcome to the coding quiz!!</h1>
+                    <h4>Try to answer the following code-related questions within the timeRemaining
+                        left. Keep in mind that incorrect answers will penalize your score/time
+                        by ten seconds!
+                    </h4>
+                    <button id="startQuizButton" type="button" class="btn btn-primary d-block mb-1">Start Quiz</button>
+                </div>
+
+
+                <div id="questionA">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 id="question" class="card-title"></h5>
+                            <div id="answerArea">
+                                <button id="answer1" type="button" class="btn btn-primary d-block mb-1"></button>
+                                <button id="answer2" type="button" class="btn btn-primary d-block mb-1"></button>
+                                <button id="answer3" type="button" class="btn btn-primary d-block mb-1"></button>
+                                <button id="answer4" type="button" class="btn btn-primary d-block mb-1"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="finish">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 id="finishID" class="card-title">Finish Page</h5>
+                            <p>Final score is <span id="score"></span></p>
+
+                            <form class="row align-items-center">
+                                <div class="col-auto">
+                                    <span class="">Enter Intials:</span>
+                                </div>
+                                <div class="col-auto">
+                                    <input type="text" class="form-control-sm" id="initials">
+                                </div>
+                                <div class="col-auto">
+                                    <button id="finishButton" type="button"
+                                        class="btn btn-primary d-block mb-1">Finish/Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="highScore">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 id="highScoreID" class="card-title">High Scores</h5>
+                            
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">User</th>
+                                        <th scope="col">Score</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tableBody">
+                                </tbody>
+                            </table>
+                            
+                            <div class="d-grid d-flex gap-5">
+                                <button id="goBackButton" type="button"
+                                    class="btn btn-primary d-block mb-1">Goback</button>
+                                <button id="clearHighScoresButton" type="button"
+                                    class="btn btn-primary d-block mb-1">Clear
+                                    Highscroes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
