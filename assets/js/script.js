@@ -6,7 +6,7 @@ var questionArea = document.getElementById("questionA");
 var answerArea = document.getElementById("answerArea");
 var initials = document.getElementById("initials");
 var questionNum = 0;
-var maxNumQuestions = 2;
+var maxNumQuestions = 5;
 
 // Questions and answers for quiz
 var question = [{
@@ -232,7 +232,7 @@ function askQuestion() {
 
 // Initialize function
 function init() {
-    timeLeft = 10;
+    timeLeft = 100;
     questionNum = 0;
 }
 
